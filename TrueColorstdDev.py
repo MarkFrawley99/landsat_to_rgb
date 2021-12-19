@@ -11,15 +11,15 @@ def StdDev(x):
 # open all tiffs and read them as numpy array, then assign to variable
 # band 2
 b2Path = gdal.Open(
-    r'C:/Users/kkstreb/Desktop/ArcPython/Landsat Austrailia/September 8 2021/LC08_L1TP_089084_20210908_20210916_02_T1_B2.TIF')
+    'C08_L1TP_089084_20210908_20210916_02_T1_B2.TIF')
 b2Array = np.array(b2Path.ReadAsArray())
 # band 3
 b3Path = gdal.Open(
-    'C:/Users/kkstreb/Desktop/ArcPython/Landsat Austrailia/September 8 2021/LC08_L1TP_089084_20210908_20210916_02_T1_B3.TIF')
+    'B3.TIF')
 b3Array = np.array(b3Path.ReadAsArray())
 # band 4
 b4Path = gdal.Open(
-    'C:/Users/kkstreb/Desktop/ArcPython/Landsat Austrailia/September 8 2021/LC08_L1TP_089084_20210908_20210916_02_T1_B4.TIF')
+    'B4.TIF')
 b4Array = np.array(b4Path.ReadAsArray())
 
 # run through std dev function
